@@ -1,0 +1,105 @@
+body{
+    background: white;
+    text-align: center;
+}
+
+#bars {
+    animation: barsInit 3s linear, bars 1s alternate infinite;
+    transition-delay: 2s, 3s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#manLeft{
+    animation: manLeft 1s linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#girl{
+    animation: girl 4s ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#girlPony{
+    animation: girlPony 1s ease-in-out alternate infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#manRight{
+    animation: manRight 6s ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#leftManHead, #girlHead, #rightManHead{
+    animation: leftManHead 1s alternate infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+@keyframes bars{
+    from {
+        transform: translateY(0.5%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes barsInit{
+    from {
+        transform: translateX(-1000px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes manLeft{
+    from {
+        transform: scaleX(100%);
+    }
+    to {
+        transform: scaleX(50%);
+    }
+}
+
+@keyframes leftManHead{
+    from {
+        transform: translateY(3%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes girl{
+    from {
+        transform: translateY(10000px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes manRight{
+    from {
+        transform: translateY(10000px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes girlPony{
+    0%{
+        transform: translateX(1%);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
